@@ -34,10 +34,7 @@ class Chef
         action a do
           include_recipe 'mac-app-store' unless a == :nothing
 
-          mac_app_store_app 'Airmail 2.6' do
-            bundle_id 'it.bloop.airmail2'
-            action a
-          end
+          mac_app_store_app 'Airmail 3'
         end
       end
     end

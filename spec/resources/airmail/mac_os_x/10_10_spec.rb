@@ -23,8 +23,7 @@ describe 'resource_airmail::mac_os_x::10_10' do
     end
 
     it 'installs via the App Store' do
-      expect(chef_run).to install_mac_app_store_app('Airmail 2.6')
-        .with(bundle_id: 'it.bloop.airmail2')
+      expect(chef_run).to install_mac_app_store_app('Airmail 3')
     end
   end
 end
